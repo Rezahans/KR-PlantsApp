@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil">
+
+    <ImageView
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="93dp"
+        android:src="@drawable/back"
+        android:onClick="Home"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="Name"
+        app:srcCompat="@drawable/img_right" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="Phone"
+        app:srcCompat="@drawable/img_right" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="Email"
+        app:srcCompat="@drawable/img_right" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="482dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="Pass"
+        app:srcCompat="@drawable/img_right" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="Address"
+        app:srcCompat="@drawable/img_right" />
+
+    <TextView
+        android:id="@+id/txt_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_below="@+id/txt_pass"
+        android:layout_marginTop="24dp"
+        android:text="Shipping Address"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_ship"
+        android:layout_marginTop="40dp"
+        android:onClick="Logout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_below="@id/txt_num"
+        android:layout_marginTop="30dp"
+        android:text=" jacklewis@gmail.com"
+        android:textColor="@color/black"
+        android:onClick="Email"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txt_pass"
+        android:layout_below="@id/txt_email"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="80dp"
+        android:text=" ***********"
+        android:textColor="@color/black"
+        android:onClick="Pass"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_below="@+id/txt_phone"
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_pass"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_below="@+id/txt_email"
+        android:layout_marginTop="26dp"
+        android:text="Change  Password"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txt_phone"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="376dp"
+        android:text=" 62 8123450689"
+        android:textColor="@color/black"
+        android:onClick="Phone"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginTop="30dp"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-19dp"
+        android:src="@drawable/header" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="176dp"
+        android:layout_below="@+id/img_header"
+        android:layout_marginTop="15dp"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_profile"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="184dp"
+        android:text="Jack Lewis"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_profile"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="219dp"
+        android:text=" @Jacklewis"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/img_profile"
+        android:layout_marginTop="45dp"
+        app:srcCompat="@drawable/img_user" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="320dp"
+        android:text="Jack Lewis"
+        android:textColor="@color/black"
+        android:onClick="Name"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="321dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="173dp"
+        app:srcCompat="@drawable/img_jack" />
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/img_user"
+        app:srcCompat="@drawable/img_phone" />
+
+    <ImageView
+        android:id="@+id/img_email"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/img_phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="26dp"
+        app:srcCompat="@drawable/img_email" />
+
+    <ImageView
+        android:id="@+id/img_lock"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/img_email"
+        app:srcCompat="@drawable/img_pass" />
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/img_lock"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="26dp"
+        app:srcCompat="@drawable/img_home" />
+
+    <ImageView
+        android:id="@+id/ic_logout"
+        android:layout_width="26dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/img_home"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="150dp"
+        app:srcCompat="@drawable/ic_logout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_home"
+        android:layout_toEndOf="@+id/ic_logout"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="10dp"
+        android:text="LOGOUT"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinssemibold" />
+
+</RelativeLayout>

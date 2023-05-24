@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="412dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-19dp"
+                android:src="@drawable/header" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:src="@drawable/container_search"
+                android:layout_marginTop="-13dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:onClick="Search"
+                android:src="@drawable/img_search"
+                android:layout_marginTop="-45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="380dp"
+                android:layout_marginTop="-35dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:onClick="Cart"
+                android:src="@drawable/img_cart"
+                android:layout_marginStart="340dp"
+                android:layout_marginTop="-30dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="25dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:layout_width="match_parent"
+                    android:layout_height="156dp"
+                    android:id="@+id/img_slider"
+                    app:iss_period="4000"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_title_background="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Jack ^^"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="90dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:fontFamily="@font/poppinssemibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lets grab your plant"
+                android:layout_marginTop="-5dp"
+                android:layout_marginStart="110dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <LinearLayout
+                android:id="@+id/nav_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Profil"
+                    android:src="@drawable/img_plnt" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:onClick="Plants"
+                    android:src="@drawable/img_prof" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Cart"
+                    android:src="@drawable/img_bg" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_fire"
+                android:layout_width="20dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/nav_menu"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="40dp"
+                app:srcCompat="@drawable/img_fire" />
+
+            <TextView
+                android:id="@+id/txt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best Deals"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginTop="-30dp"
+                android:layout_marginStart="70dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_products1"
+                        android:layout_marginStart="20dp"
+                        android:onClick="DetailProduct"
+                        tools:ignore="OnClick" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_products2"
+                        android:layout_marginStart="5dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_products3"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/nav_menu"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp"
+                app:srcCompat="@drawable/img_love" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Popular"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginTop="-30dp"
+                android:layout_marginStart="70dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_products4"
+                        android:layout_marginStart="20dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_products2"
+                        android:layout_marginStart="5dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_products3"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

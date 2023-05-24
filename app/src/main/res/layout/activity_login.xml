@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:guidelineUseRtl="true"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:text="Hello Again!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome back, you've been missed!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <EditText
+        android:id="@+id/edt_Email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="textEmailAddress"
+        android:padding="18dp"
+        android:textColorHint="#91C788" />
+
+    <EditText
+        android:id="@+id/edt_Pass"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColorHint="#91C788" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:onClick="Recovery"
+        android:text="Forget Password?"
+        android:textColor="#52734D"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Login"
+        android:onClick="Home"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/img_google"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:onClick="Home"
+            android:src="@drawable/img_google" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/img_google"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:onClick="Home"
+            android:src="@drawable/img_facebook" />
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_google"
+            android:layout_marginTop="30dp"
+            android:clickable="false"
+            android:fontFamily="@font/poppinsregular"
+            android:onClick="Register"
+            android:text="Not a member ?"
+            android:textColor="#52734D"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_google"
+            android:layout_toEndOf="@+id/txt_1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="false"
+            android:fontFamily="@font/poppinsbold"
+            android:onClick="Register"
+            android:text="Register"
+            android:textColor="#52734D"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="120dp"-->
+    <!--            android:layout_height="230dp"-->
+    <!--            android:layout_marginTop="-60dp"-->
+    <!--            android:layout_gravity="end"-->
+    <!--            android:src="@drawable/img_cactus" />-->
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Recovery">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/back"
+        android:onClick="Login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="Reset Your Password"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:fontFamily="@font/poppinsbold"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="10dp"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColorHint="#91C788" />
+
+    <Button
+        android:id="@+id/Recovery"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:text="Recovery"
+        android:onClick="Login"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ?"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="18sp"
+            android:textColor="#52734D"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_toEndOf="@+id/txt_1"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginLeft="5dp"
+            android:onClick="Login"
+            android:textSize="18sp"
+            android:textColor="#52734D"/>
+
+    </RelativeLayout>
+
+    <!--        <ImageView-->
+    <!--           android:layout_width="120dp"-->
+    <!--           android:layout_height="230dp"-->
+    <!--           android:layout_marginTop="70dp"-->
+    <!--           android:layout_gravity="end"-->
+    <!--           android:src="@drawable/img_cactus" />-->
+
+</LinearLayout>

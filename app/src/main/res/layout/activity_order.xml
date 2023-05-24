@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order">
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-19dp"
+        android:src="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/back"
+        android:onClick="Cart"/>
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:text="Order"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <Button
+        android:id="@+id/card"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rb_ship"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_main"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"
+        android:onClick="Pay"
+        android:text="Checkout"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="98dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        app:srcCompat="@drawable/img_flow4" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_1"
+        android:layout_toEndOf="@id/img1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:text="Pink Authurium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinsbold"/>
+
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Ship to :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_2"
+        android:layout_toEndOf="@id/img1"
+        android:layout_marginStart="15dp"
+        android:text="1 x Rp 650.000"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_3"
+        android:layout_marginStart="20dp"
+        android:text="Jack Lewis(62 8123450689)"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_5"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_4"
+        android:layout_marginStart="20dp"
+        android:text="Pangeran Antasari Street No. 22, Pejaten, South Jakarta, 23232, Indonesia"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_7"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Payment Method"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsmedium" />
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:src="@drawable/container"
+        android:layout_below="@id/txt_8"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Shipping Method"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <TextView
+        android:id="@+id/txt_6"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_5"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:text="Sub Total
+        Shipping
+        Taxes"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:id="@+id/txt_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_8"
+        android:layout_toEndOf="@id/img2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Credit Card"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_10"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/img4"
+        android:text="Standard ( Arrives in 3-7 Business Days )"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_9"
+        android:layout_toEndOf="@id/img2"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="10dp"
+        android:text="Cash on Delivery"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="FREE"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/txt_5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Rp 650.000 Free
+         Rp 65.000"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#ABABAB"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Rp 715.000"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <TextView
+        android:id="@+id/txt_7"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="TOTAL"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt_8"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/img_cc" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/txt_10"
+        android:layout_toEndOf="@id/rb_ship"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/img_ship" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/img2"
+        app:srcCompat="@drawable/img_tf" />
+
+    <RadioButton
+        android:id="@+id/rb_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_10"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:checked="true"/>
+
+    <ImageView
+        android:id="@+id/ic_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="Card"
+        app:srcCompat="@drawable/img_right2" />
+
+    <RadioButton
+        android:id="@+id/rb_tf2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_right"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"/>
+
+</RelativeLayout>

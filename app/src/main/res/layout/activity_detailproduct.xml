@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailProduct">
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-19dp"
+        android:src="@drawable/header" />
+
+    <ImageView
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/back"
+        android:onClick="plants"/>
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:text="Detail Product"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_below="@+id/txt_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        app:srcCompat="@drawable/img_product" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Aglaonema Wishes"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_2"
+        android:layout_centerHorizontal="true"
+        android:text="Rp 650.000"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <TextView
+        android:id="@+id/txt_5"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_4"
+        android:layout_centerHorizontal="true"
+        android:text="Embrace color with this unique Aglaonema cultivar, Wishes. A fitting name since the Aglaonema is said to bring luck, fortune, and general positivity to those who grow it."
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_5"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_main"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Add To Cart"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

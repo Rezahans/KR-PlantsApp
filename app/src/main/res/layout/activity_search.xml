@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-19dp"
+        android:src="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/back"
+        android:onClick="Home"/>
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="173dp"
+        android:text="Recent Searches"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Popular Searches"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailSubject"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_header"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/back"
+        android:background="@drawable/edit"
+        android:hint="Search your plant here"
+        android:inputType="textEmailSubject"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/img_header"
+        android:layout_toEndOf="@id/back"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/img_search" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_1"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/img_flow2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_1"
+        android:layout_toEndOf="@id/img1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/img_flow4" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_2"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/img_flow3" />
+
+
+</RelativeLayout>

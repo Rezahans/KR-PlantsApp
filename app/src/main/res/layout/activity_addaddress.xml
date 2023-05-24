@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAddress">
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-19dp"
+        android:src="@drawable/header" />
+
+    <ImageView
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/back"
+        android:onClick="Address"/>
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:text="Add Address"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="690dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:hint="Phone"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Zip Code"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Last Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="State"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="City"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="City"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="145dp"
+        android:text="Fist Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:hint="First Name"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:hint="Last Name"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+    <EditText
+        android:id="@id/editText3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:hint="Address"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+    <EditText
+        android:id="@id/editText4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="441dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:hint="City"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+    <EditText
+        android:id="@id/editText5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:hint="State"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+    <EditText
+        android:id="@id/editText6"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="610dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:hint="Zip Code"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="#ABABAB" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="760dp"
+        android:background="@drawable/button_main"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"
+        android:onClick="Address"
+        android:text="Save"
+        android:textColor="#fff" />
+
+</RelativeLayout>
