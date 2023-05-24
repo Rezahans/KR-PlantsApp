@@ -1,3 +1,3 @@
-#KR-PlantsApp
+--KR-PlantsApp--
 
 In this project about KR-Plants and we know about KR Plants is a mobile-based application as a platform for all individuals with an interest in plants. This program enables users to log in, register (complete the personal information form before using the application), and recover passwords if they forget the password for the account being used. This application's primary objective was to facilitate the purchasing of plants. Customers can choose and review product information for the plants that would like to buy, add products to the shopping cart, and then choose a payment option up until the checkout process is complete.
